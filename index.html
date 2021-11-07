@@ -69,6 +69,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 <img id="comic-image" class="img-fluid" />
                 <div id="comic-date"></div>
             </div>
+            <script>
      var observer   =   new IntersectionObserver(function(entries){
     if(entries[0].isIntersecting  === true){
          console.log('Element has just become visible in screen');
@@ -80,6 +81,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     }
     },{threshold: [0] });
 observer.observe(document.getElementById("comic-image"));
+                </script>
             <div class="pt-5 mb-4">
                 <h4 class="mb-3">Search Comics by ID</h4>
                 <form id="comic-form" class="form-inline d-flex justify-content-center">
